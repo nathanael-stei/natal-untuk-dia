@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Natal Untukmu 🎄</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Sacramento&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ffe6e9, #d6e6ff);
+            color: #333;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-family: 'Sacramento', cursive;
+            font-size: 64px;
+            margin-top: 60px;
+            color: #b71c1c;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.7);
+            backdrop-filter: blur(10px);
+            padding: 35px;
+            margin: 40px auto;
+            border-radius: 20px;
+            width: 85%;
+            max-width: 700px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .card p {
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        .highlight {
+            font-weight: 600;
+            color: #ad1457;
+        }
+
+        .snowflake {
+            position: fixed;
+            top: -10px;
+            font-size: 18px;
+            color: #ffffff;
+            opacity: 0.8;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            0% { transform: translateY(-10vh); }
+            100% { transform: translateY(110vh); }
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 14px;
+            opacity: 0.6;
+            padding-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Selamat Natal 🎄✨</h1>
+
+<div class="card">
+    <p>Untuk seorang perempuan spesial yang katanya selalu ingin <span class="highlight">pergi ke kayangan</span>,</p>
+
+    <p>Semoga Natal ini membawa damai, sukacita, dan harapan baru yang manis seperti
+    <span class="highlight">satu truk penuh es krim</span> yang selalu kamu impikan 🍦🚚✨</p>
+
+    <p>Dan untuk permintaan bercandamu yang <span class="highlight">1,5 M</span> itu…  
+    semoga Tuhan meng-amin-kan di tahun depan — siapa tahu kan? 😉💸</p>
+
+    <p><strong>Merry Christmas & GBU!</strong></p>
+    <p>- Dari seseorang yang peduli</p>
+</div>
+
+<script>
+// Membuat efek salju
+for (let i = 0; i < 40; i++) {
+    let snow = document.createElement("div");
+    snow.className = "snowflake";
+    snow.innerHTML = "❄";
+    snow.style.left = Math.random() * 100 + "vw";
+    snow.style.animationDuration = 4 + Math.random() * 6 + "s";
+    snow.style.fontSize = (16 + Math.random() * 12) + "px";
+    document.body.appendChild(snow);
+}
+</script>
+
+<footer>
+    ✨ Website ucapan Natal — 2025 ✨
+</footer>
+
+</body>
+</html>
